@@ -5,7 +5,7 @@ import React from "react";
 function buildCalendar(year, month) {
   const first = new Date(year, month, 1);
   const start = new Date(first);
-  start.setDate(first.getDate() - ((first.getDay() + 6) % 7)); // week starts Monday
+  start.setDate(first.getDate() - ((first.getDay() + 6) % 7)); 
 
   const days = [];
   for (let i = 0; i < 42; i++) {
@@ -52,7 +52,7 @@ export default function CalendarWidget() {
         ))}
       </div>
 
-      {/* DAYS */}
+      {/* Days */}
       <div className="grid grid-cols-7 gap-y-2 text-sm mt-1 select-none">
         {days.map((d, i) => {
           const inMonth = d.getMonth() === month;

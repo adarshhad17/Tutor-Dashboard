@@ -3,47 +3,71 @@ import { FaTwitter, FaFacebookF, FaInstagram } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-800 ">  
+    <footer className="bg-gray-700 text-gray-300">
       <div className="max-w-[1240px] mx-auto px-4 md:px-6">
 
-        <div className="flex flex-col md:flex-row items-start md:items-center justify-between py-8 gap-6">
+        {/* Top 4 Column Layout */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 py-14">
 
-          {/* LEFT — BRAND SECTION */}
-          <div className="min-w-[180px]">
-            <h2 className="text-xl font-semibold text-white ">
-              Tutor<span className="text-teal-600">Pro</span>
+          {/* Brand Section */}
+          <div>
+            <h2 className="text-2xl font-bold text-white tracking-wide">
+              LOREMLOGO
             </h2>
-            <p className="text-white text-sm mt-1 max-w-240px ">
-              A platform designed to make teaching and learning seamless.
+            <p className="text-sm leading-6 mt-3 max-w-xs">
+              A powerful platform that simplifies the teaching and learning experience.
+              Our mission is to create meaningful, seamless, and collaborative educational interactions.
             </p>
+
+            {/* Social Icons */}
+            <div className="flex items-center gap-4 mt-4">
+              <a href="#" className="hover:text-teal-400 transition"><FaTwitter /></a>
+              <a href="#" className="hover:text-teal-400 transition"><FaFacebookF /></a>
+              <a href="#" className="hover:text-teal-400 transition"><FaInstagram /></a>
+            </div>
           </div>
 
-          {/* CENTER — QUICK LINKS */}
-          <nav className="flex flex-wrap items-center gap-4 md:gap-8 text-sm text-white ">
-            <a href="#" className="hover:text-teal-600 transition">Dashboard</a>
-            <a href="#" className="hover:text-teal-600 transition">Sessions</a>
-            <a href="#" className="hover:text-teal-600 transition">Students</a>
-            <a href="#" className="hover:text-teal-600 transition">Support</a>
-          </nav>
+          {/* Quick Links */}
+          <div>
+            <h3 className="text-white text-lg font-semibold mb-4">Quick Links</h3>
+            <ul className="space-y-2 text-sm">
+              <li><a href="#" className="hover:text-teal-400 transition">Dashboard</a></li>
+              <li><a href="#" className="hover:text-teal-400 transition">Tutoring Sessions</a></li>
+              <li><a href="#" className="hover:text-teal-400 transition">Student Management</a></li>
+              <li><a href="#" className="hover:text-teal-400 transition">Class Schedules</a></li>
+            </ul>
+          </div>
 
-          {/* RIGHT — SOCIAL ICONS */}
-          <div className="flex items-center gap-4 text-gray-600">
-            <a href="#" className="hover:text-teal-600 transition">
-              <FaTwitter className="w-5 h-5" />
-            </a>
-            <a href="#" className="hover:text-teal-600 transition">
-              <FaFacebookF className="w-5 h-5" />
-            </a>
-            <a href="#" className="hover:text-teal-600 transition">
-              <FaInstagram className="w-5 h-5" />
-            </a>
+          {/* Support & Legal */}
+          <div>
+            <h3 className="text-white text-lg font-semibold mb-4">Support</h3>
+            <ul className="space-y-2 text-sm">
+              <li><a href="#" className="hover:text-teal-400 transition">Help Center</a></li>
+              <li><a href="#" className="hover:text-teal-400 transition">FAQs</a></li>
+              <li><a href="#" className="hover:text-teal-400 transition">Privacy Policy</a></li>
+              <li><a href="#" className="hover:text-teal-400 transition">Terms & Conditions</a></li>
+            </ul>
+          </div>
+
+          {/* Contact Section */}
+          <div>
+            <h3 className="text-white text-lg font-semibold mb-4">Contact</h3>
+            <ul className="space-y-2 text-sm">
+              <li>Email: <a href="mailto:support@loremlogo.com" className="hover:text-teal-400">support@loremlogo.com</a></li>
+              <li>Phone: <a href="tel:+919876543210" className="hover:text-teal-400">+91 98765 43210</a></li>
+              <li>Address:</li>
+              <p className="text-gray-400 text-xs leading-5 max-w-[180px]">
+                3rd Floor, Lorem Tech Park,  
+                Kochi, Kerala - 682021
+              </p>
+            </ul>
           </div>
 
         </div>
 
-        {/* BOTTOM SMALL TEXT */}
-        <div className="border-t border-gray-200 py-4 text-center text-xs text-gray-500">
-          © {new Date().getFullYear()} TutorPro — Designed with care.
+        {/* Bottom Bar */}
+        <div className="border-t border-gray-700 py-5 text-center text-xs text-gray-500">
+          © {new Date().getFullYear()} LOREMLOGO. All Rights Reserved. Built with passion & purpose.
         </div>
 
       </div>

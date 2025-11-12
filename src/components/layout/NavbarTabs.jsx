@@ -18,14 +18,14 @@ export default function NavbarTabs() {
   return (
     <div className="bg-white lg:border-b  border-gray-100 lg:shadow">
 
-      {/* ✅ MOBILE (<640px) */}
+      {/* ------mob */}
       <div className="block sm:hidden px-4 py-3">
         <h2 className="text-[14px] font-semibold text-gray-800">
           Tutor Dashboard
         </h2>
       </div>
 
-      {/* ✅ TABLET / IPAD (640px - 1279px) */}
+      {/* -------tab */}
       <div className="hidden sm:block xl:hidden overflow-x-auto no-scrollbar bg-white">
         
         <div className="flex gap-6 px-4 py-3 text-[14px] text-gray-600 whitespace-nowrap">
@@ -48,14 +48,14 @@ export default function NavbarTabs() {
         </div>
       </div>
 
-      {/* ✅ DESKTOP (≥1280px) */}
-      <div className="hidden xl:flex max-w-[1240px] mx-auto px-6 items-center gap-10">
+      {/*-------desk*/}
+      <div className="hidden xl:flex max-w-[1240px] mx-auto px-6 items-center  gap-65">
 
         <h2 className="py-3 text-[16px] font-semibold text-gray-800 whitespace-nowrap">
           Tutor Dashboard
         </h2>
 
-        <div className="flex items-center gap-8 text-[15px] text-gray-600 whitespace-nowrap">
+        <div className="flex items-center gap-5 text-[15px] font-semibold text-gray-500 whitespace-nowrap">
           {tabs.map(({ to, label, icon }) => (
             <NavLink
               key={label}

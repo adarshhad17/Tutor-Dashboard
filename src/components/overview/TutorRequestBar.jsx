@@ -7,7 +7,6 @@ import TutorImg from "../../assets/tutor.jpg";
 export default function TutorRequestBar() {
   const [visible, setVisible] = useState(false);
 
-  // ✅ Current Date
   const now = new Date();
   const formattedDate = now.toLocaleDateString("en-US", {
     day: "numeric",
@@ -27,10 +26,10 @@ export default function TutorRequestBar() {
 
   return (
     <>
-      {/* ================= DESKTOP ================= */}
+      {/* ================= DESKTOP =============================================================== */}
       <div className="hidden md:block relative bg-[#EAF9FA] border border-teal-50 py-6 px-5 mt-8">
 
-        {/* Close Button */}
+        {/* ------Close  */}
         <XMarkIcon
           className="w-7 h-7 absolute right-2 top-0 cursor-pointer text-gray-700 hover:text-black transition font-black"
           onClick={() => setVisible(false)}
@@ -38,7 +37,7 @@ export default function TutorRequestBar() {
 
         <div className="max-w-[1240px] mx-auto px-6 flex flex-wrap items-center justify-between gap-y-4 ">
 
-          {/* LEFT SIDE */}
+          {/* --------------------Left */}
           <div className="flex items-center gap-4 min-w-[250px]">
             <img
               src={TutorImg}
@@ -47,7 +46,7 @@ export default function TutorRequestBar() {
             />
 
             <div className="leading-tight">
-              <p className="text-teal-600 font-semibold text-[14px]">Tutor Request</p>
+              <p className="text-teal-600 font-semibold text-[14px]">New Tutor Request</p>
 
               <div className="text-gray-500 text-[12px] font-semibold flex flex-wrap gap-x-6 gap-y-1 mt-2">
                 <span>Client: Sheila Pratt</span>
@@ -57,7 +56,7 @@ export default function TutorRequestBar() {
             </div>
           </div>
 
-          {/* ACTION BUTTONS */}
+          {/* -----------actions*/}
           <div className="flex items-center flex-wrap gap-6 text-sm whitespace-nowrap pr-8">
             <button className="flex flex-col items-center gap-1 text-teal-600 hover:font-semibold transition">
               <CheckIcon className="w-6 h-6" />
@@ -82,7 +81,7 @@ export default function TutorRequestBar() {
         </div>
       </div>
 
-      {/* ================= MOBILE POPUP ================= */}
+      {/* ===========  Mob ================================== */}
       <div className="md:hidden fixed top-[90px] left-1/2 -translate-x-1/2 w-[95%] bg-white shadow-lg rounded-lg p-6 z-50">
         <div className="flex justify-end">
           <XMarkIcon

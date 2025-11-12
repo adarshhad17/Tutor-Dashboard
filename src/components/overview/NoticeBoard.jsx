@@ -43,7 +43,7 @@ export default function NoticeBoard() {
               }`}
             ></div>
 
-            {/* Line (not for last item) */}
+            {/*  last item) */}
             {i < items.length - 1 && (
               <div className="absolute left-1.5 top-[18px] w-px h-[calc(100%-18px)] bg-teal-500"></div>
             )}

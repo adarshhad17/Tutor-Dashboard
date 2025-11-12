@@ -7,15 +7,16 @@ import NoticeBoard from "../components/overview/NoticeBoard";
 import CalendarWidget from "../components/overview/CalendarWidget";
 
 export default function Overview() {
+  
   const [showCalendarMobile, setShowCalendarMobile] = useState(false);
 
   return (
     <div className="lg:bg-[#fffffb] min-h-screen w-full overflow-x-hidden pt-2 pb-10">
 
-      {/* ✅ TUTOR REQUEST BAR WIDTH CONTROL */}
+      {/* ----------------------Tutor req ----------------------------- */}
       <div className="max-w-[1240px] w-full mx-auto px-4 md:px-6">
-        
-        {/* Desktop (Only on xl and above) */}
+
+        {/* -------- Desktop ≥1280px) -------- */}
         <div className="hidden xl:block">
           <div className="grid grid-cols-[70%_30%] gap-8">
             <div className="col-span-2">
@@ -24,19 +25,19 @@ export default function Overview() {
           </div>
         </div>
 
-        {/* Mobile & Tablet (iPad included) */}
+        {/* ---- Mobile + Tablet + iPad Pro (≤1279px) ---- */}
         <div className="xl:hidden">
           <TutorRequestBar />
         </div>
       </div>
 
-      {/* ✅ PAGE CONTENT */}
+      {/* ------------------- PAGE CONTENT  */}
       <div className="max-w-[1240px] w-full mx-auto px-4 md:px-6">
 
-        {/* ✅ Desktop Only (xl and above) */}
+        {/* -------- Desk Layout (≥1280px) -------- */}
         <div className="hidden xl:grid grid-cols-[70%_30%] gap-8 mt-6">
 
-          {/* LEFT SECTION */}
+          {/* -------Left*/}
           <div className="space-y-6 min-w-0">
             <StatsCards />
 
@@ -46,14 +47,14 @@ export default function Overview() {
             </div>
           </div>
 
-          {/* RIGHT SECTION */}
+          {/* ---------Right */}
           <div className="space-y-6 min-w-0">
             <CalendarWidget />
             <NoticeBoard />
           </div>
         </div>
 
-        {/* ✅ Mobile + Tablet + iPad View */}
+        {/* -------- Mobile + Tablet + iPad Pro Layout (≤1279px) -------- */}
         <div className="xl:hidden mt-6">
           {showCalendarMobile ? (
             <>

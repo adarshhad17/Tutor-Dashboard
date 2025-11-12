@@ -1,16 +1,62 @@
-# React + Vite
+# Tutor Dashboard 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A fully responsive Tutor Dashboard built using React (Vite) and Tailwind CSS, designed to provide a clean and modern interface for tutors to manage sessions, view schedules, and interact with notifications.  
+Supports Desktop, Tablet (iPad), and Mobile views smoothly.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Fully Responsive UI (Desktop, Tablet, Mobile)
+- Modern design with Tailwind CSS
+- Navigation with React Router
+- Reusable UI Components
+- Tutor Request Popup with Accept/Decline Actions
+- Upcoming & Completed Session Lists
+- Calendar & Notice Board Widgets
+- Clean File & Component Structure
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+##  Tech Stack
+
+| => React
+| => Tailwind CSS
+| => React Router 
+| => Heroicons / React-Icons
+
+---
+
+##  Installation & Setup
+
+Follow these steps to run the project 
+
+
+### 1️ Clone the Repository
+
+
+1. git clone https://github.com/your-username/tutor-dashboard.git
+
+2. cd Tutor-Dashboard
+
+3. npm install
+
+4. npm run dev
+
+
+
+## Responsive 
+
+Device	Width Range	Layout Behavior
+
+## Mobile
+	< 640px	Single column + mobile popup
+
+## Tablet (iPad)
+	640px - 1023px	Scrollable tabs + compact card layout
+
+## Desktop
+	≥ 1024px	Full dashboard layout with sidebar panels
+
