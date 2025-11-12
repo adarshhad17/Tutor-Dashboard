@@ -1,6 +1,6 @@
 import React from "react";
 import Tutor1 from "../../assets/dq.jpg";
-import Tutor2 from "../../assets/mrunal.webp";
+import Tutor2 from "../../assets/Mrunal.webp";
 import { HiLocationMarker } from "react-icons/hi";  
 import { FaCheckCircle } from "react-icons/fa";     
 
