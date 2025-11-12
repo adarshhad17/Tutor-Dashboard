@@ -3,8 +3,8 @@ import Overview from "./pages/Overview";
 import NotFound from "./pages/NotFound";
 import React from "react";
 import Home from "./pages/Home";
-import Footer from "./components/layout/Footer";
-import Navbarr from "./components/layout/Navbar";
+import Footer from "./components/common/Footer";
+import Navbarr from "./components/common/Navbar";
 
 export default function App() {
   return (
